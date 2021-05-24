@@ -9,7 +9,17 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body style="margin: 0">
+    <div id="navbar">
+      <h2>Stupid coaching</h2>
+      <div class="links">
+        <%= link_to "Home", root_path, class: "link" %>
+        <%= link_to "Ask a new question", ask_path, class: "link" %>
+      </div>
+    </div>
+    <div style="margin: 16px">
+      <%= yield %>
+    </div>
+
   </body>
 </html>
